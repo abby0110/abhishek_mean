@@ -1,0 +1,92 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .class-col-sm-8{
+
+            text-align: center;
+            color:brown;
+            border:2px solid grey;
+            margin: 100px;
+            background-color: burlywood;
+            height:400px;
+
+
+        }
+        h1{
+            text-decoration: underline;
+        }
+        
+           
+    </style>
+    <script>
+        function add(){
+            a=parseInt(document.f1.n1.value);
+            b=parseInt(document.f1.n2.value);
+            // console.log(document.f1.n1.value)
+            c=a+b;
+            document.f1.result.value=c;
+
+
+        }
+        function sub(){
+        a= parseInt(document.f1.n1.value);
+        b= parseInt(document.f1.n2.value);
+        // console.log(document.f1.n1.value);
+         c=a-b;
+        document.f1.result.value=c;
+        }
+        function div(){
+            a= parseInt(document.f1.n1.value);
+            b= parseInt(document.f1.n2.value);
+        // console.log(document.f1.n1.value);
+         c=a/b;
+        document.f1.result.value=c;
+            
+        }
+        function mul(){
+            a= parseInt(document.f1.n1.value);
+            b= parseInt(document.f1.n2.value);
+        // console.log(document.f1.n1.value);
+            c=a*b;
+            document.f1.result.value=c;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="class-col-sm-8">
+
+        <h1 style > Calculator</h1>
+        <br><br>
+        <hr>
+
+        <form name="f1">
+
+            Number One : <input type="text" name="n1">
+            <br> <br>
+            number Two: <input type="text" name="n2">
+            <br><br>
+            Result: <input type="text" name="result">
+
+            <br><br>
+              <input type="button" value="add" onclick="add()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="button" value="sub" onclick="sub()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <br><br> -->
+              <input type="button" value="div" onclick="div()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="button" value="mul" onclick="mul()">
+            
+        </form>
+
+    </div>
+
+</body>
+</html>
